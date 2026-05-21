@@ -71,7 +71,7 @@ else:
 
     kpi1, kpi2, kpi3, kpi4 = st.columns(4)
     kpi1.metric("Gross Capital Pool", f"${df['Gross Capital'].sum():,}")
-    kpi2.metric(Adjusted EV Pool", f"${df['Expected Value'].sum():,.0f}", help="Total funding adjusted for match probability.")
+    kpi2.metric("Adjusted EV Pool", f"${df['Expected Value'].sum():,.0f}", help="Total funding adjusted for match probability.")
     kpi3.metric("Peak Hourly Yield", f"${df['Hourly Impact'].max()}/hr")
     kpi4.metric("Active Assets", len(df))
 
