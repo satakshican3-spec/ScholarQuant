@@ -107,7 +107,7 @@ else:
         else:
             st.success("Temporal parameters stable. No immediate deadlines detected.")
 
-     st.subheader("Asset Allocation Matrix")
+    st.subheader("Asset Allocation Matrix")
      df_final = df.sort_values(by="Hourly Impact", ascending=False)
      st.dataframe(df_final, use_container_width=True, hide_index=True)
 
