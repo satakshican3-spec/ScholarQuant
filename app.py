@@ -117,7 +117,7 @@ else:
         data=csv_data,
         file_name=f"ScholarQuant_Strategy_{date.today()}.csv",
         mime='text/csv',
-    }
+    )
      
 st.write("---")
 st.caption("ScholarQuant v1.0 | Data-Driven Academic Strategy | Developed in Calgary, AB")
