@@ -115,7 +115,7 @@ else:
     st.download_button(
         label="Download Comprehensive Strategy Report (CSV)",
         data=csv_data,
-        file_name=f"ScholarQuant_Strategy_{date.today().csv",
+        file_name=f"ScholarQuant_Strategy_{date.today()}.csv",
         mime='text/csv',
     }
      
