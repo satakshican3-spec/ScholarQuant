@@ -108,16 +108,16 @@ else:
             st.success("Temporal parameters stable. No immediate deadlines detected.")
 
     st.subheader("Asset Allocation Matrix")
-     df_final = df.sort_values(by="Hourly Impact", ascending=False)
-     st.dataframe(df_final, use_container_width=True, hide_index=True)
+    df_final = df.sort_values(by="Hourly Impact", ascending=False)
+    st.dataframe(df_final, use_container_width=True, hide_index=True)
 
-     csv_data = df_final.to_csv(index=False).encode('utf-8')
-     st.download_button(
-         label="Download Comprehensive Strategy Report (CSV)",
-         data=csv_data,
-         file_name=f"ScholarQuant_Strategy_{date.today().csv",
-         mime='text/csv',
-     }
+    csv_data = df_final.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="Download Comprehensive Strategy Report (CSV)",
+        data=csv_data,
+        file_name=f"ScholarQuant_Strategy_{date.today().csv",
+        mime='text/csv',
+    }
      
 st.write("---")
 st.caption("ScholarQuant v1.0 | Data-Driven Academic Strategy | Developed in Calgary, AB")
